@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg: #191970;
+    --primary-color: white;
+    --secondary-color: skyblue;
+    --hover-bg: #4169e1;
+    --hover-color: #fff;
+}
+
+/* Gaya dasar */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar-nav .nav-link {
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-color);
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #87ceeb;
+    color: var(--hover-color);
+}
+
+.container {
+    padding: 20px;
+    flex: 1; 
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: #191970;
+    color: white;
+    font-size: 18px;
+    border-top: 5px solid #87ceeb;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+@media (max-width: 768px) {
+    .container {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+}
